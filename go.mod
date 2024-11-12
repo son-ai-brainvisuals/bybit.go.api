@@ -1,4 +1,4 @@
-module github.com/wuhewuhe/bybit.go.api
+module github.com/son-ai-brainvisuals/bybit.go.api
 
 go 1.21
 

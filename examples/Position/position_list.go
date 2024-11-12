@@ -3,7 +3,7 @@ package main
 import (
 	"context"
 	"fmt"
-	bybit "github.com/wuhewuhe/bybit.go.api"
+	bybit "github.com/son-ai-brainvisuals/bybit.go.api"
 )
 
 func main() {
