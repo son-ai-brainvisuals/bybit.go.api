@@ -26,13 +26,14 @@ func TestSendCustomSignRequestWalletBalance(t *testing.T) {
 	log.Println("res", string(resBytes))
 }
 
+const apiKey = "M86Bz93UwsidYn70cQ"
+const apiSecret = "9FrlRwLWTcOsES35DEFK0nfUzsdiCEH7kguU"
+
 func TestSendCustomSignRequestCopyTrading(t *testing.T) {
 
-	API_KEY := "M86Bz93UwsidYn70cQ"
-	API_SECRET := "9FrlRwLWTcOsES35DEFK0nfUzsdiCEH7kguU"
 	opts := []ClientOption{}
 	opts = append(opts, WithBaseURL(TESTNET))
-	c := NewBybitHttpClient(API_KEY, API_SECRET, opts...)
+	c := NewBybitHttpClient(apiKey, apiSecret, opts...)
 
 	query := &url.Values{}
 	query.Set("accountType", "UNIFIED")
